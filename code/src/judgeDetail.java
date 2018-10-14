@@ -13,7 +13,7 @@ public class judgeDetail {
     public String judge(int year ,int month ,int day){
         int daysCount=0;
         if (isLeapYear(year)) daysOfMonth[1]=29;
-        if (day>daysOfMonth[month-1]) {System.out.println("璇疯緭鍏ヨ鏈堝悎娉曠殑澶╂暟");return "";}
+        if (day>daysOfMonth[month-1]) {System.out.println("请输入该月合法的天数");return "";}
         for (int i=1900;i<year;++i){
             if (isLeapYear(i)){
                 daysCount+=366;
