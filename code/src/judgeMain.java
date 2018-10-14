@@ -29,15 +29,15 @@ public class judgeMain {
 
     public static boolean dateIsValid(int year, int month, int day) {
         if (year < 1900) {
-            System.out.println("璇疯緭鍏�1900骞翠箣鍚庣殑骞翠唤");
+            System.out.println("请输入1900年之后的年份");
             return false;
         }
         if (month > 12 || month < 1) {
-            System.out.println("璇疯緭鍏ュ悎娉曠殑鏈堜唤");
+            System.out.println("请输入合法的月份");
             return false;
         }
         if (day > 31 || day < 1) {
-            System.out.println("璇疯緭鍏ュ悎娉曠殑澶╂暟");
+            System.out.println("请输入合法的天数");
             return false;
         }
         return true;
