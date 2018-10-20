@@ -33,10 +33,15 @@ public class ValidCircle {
         double x0 = -(d * e - b * f) / det;
         double y0 = -(a * f - c * e) / det;
         System.out.println("("+x0+","+y0+")");
-        return calRadius(x1,y1,x0,y0);
+        return stub_calRadius(x1,y1,x0,y0);
     }
 
     public  static double calRadius(double x1,double y1,double x0,double y0) {
         return Math.sqrt((x1-x0)*(x1-x0)+(y1-y0)*(y1-y0));
     }
+    
+    public  static double stub_calRadius(double x1,double y1,double x0,double y0) {
+    	return 2.5;
+    }
+    
 }
