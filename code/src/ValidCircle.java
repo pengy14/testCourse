@@ -20,6 +20,7 @@ public class ValidCircle {
         double radius=-1;
         if(p1==null||p2==null||p3==null) return -1;
         if((p1.x==p2.x&&p1.y==p2.y)||(p1.x==p3.x&&p1.y==p3.y)||(p3.x==p2.x&&p3.y==p2.y)) return -1;
+
         double x1=p1.x,x2=p2.x,x3=p3.x;
         double y1=p1.y,y2=p2.y,y3=p3.y;
         double a = x1 - x2;

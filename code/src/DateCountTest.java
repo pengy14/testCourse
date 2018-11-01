@@ -21,6 +21,7 @@ public class DateCountTest {
 		assertEquals(true,DateCount.isLeapYear(2000));
 		assertEquals(true,DateCount.isLeapYear(2004));
 		assertEquals(false,DateCount.isLeapYear(1999));
+		assertEquals(false,DateCount.isLeapYear(100));
 	}
 
 	@Test
