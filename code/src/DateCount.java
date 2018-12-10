@@ -32,7 +32,7 @@ public class DateCount {
 	}
 
 	public int calculate(int year, int month, int day) {
-		if (stub_dateIsValid(year, month, day)) {
+		if (dateIsValid(year, month, day)) {
 			int daysCount = 0;
 			for (int j = 0; j < month - 1; ++j) {
 				daysCount += daysOfMonth[j];
@@ -46,6 +46,32 @@ public class DateCount {
 		}
 	}
 
+	public String judge(int year ,int month ,int day){
+        int daysCount=0;
+        if (isLeapYear(year)) daysOfMonth[1]=29;
+        for (int i=1900;i<year;++i){
+            if (isLeapYear(i)){
+                daysCount+=366;
+            }else{
+                daysCount+=365;
+            }
+        }
+
+        for (int j=0;j<month-1;++j){
+            daysCount+=daysOfMonth[j];
+        }
+
+        daysCount+=day;
+        int week=daysCount%7;
+        return convert(week);
+    }
+
+    public static String convert(int week) {
+        String[] weekName = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+        return weekName[week];
+    }
+	
+	
 	public static void main(String[] args) {
 		DateCount validDate = new DateCount();
 		String inputStr;
@@ -58,6 +84,7 @@ public class DateCount {
 		date[1] = Integer.parseInt(tempResult[1]);
 		date[2] = Integer.parseInt(tempResult[2]);
 		System.out.println(validDate.calculate(date[0], date[1], date[2]));
+		System.out.println(validDate.judge(date[0], date[1], date[2]));
 	}
 
 	public static boolean stub_dateIsValid(int year, int month, int day) {
