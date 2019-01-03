@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField; 
@@ -13,61 +14,63 @@ public class Input {
 	static int year;
 	static int month;
 	static int day;
+	
     
     public static void main(String[] args) {    
-        // ´´½¨ JFrame ÊµÀý
-        JFrame frame = new JFrame("Login Example");
+        // ï¿½ï¿½ï¿½ï¿½ JFrame Êµï¿½ï¿½
+        JFrame frame = new JFrame("dateCount");
         // Setting the width and height of frame
-        frame.setSize(350, 200);
+        frame.setSize(700, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        /* ´´½¨Ãæ°å£¬Õâ¸öÀàËÆÓÚ HTML µÄ div ±êÇ©
-         * ÎÒÃÇ¿ÉÒÔ´´½¨¶à¸öÃæ°å²¢ÔÚ JFrame ÖÐÖ¸¶¨Î»ÖÃ
-         * Ãæ°åÖÐÎÒÃÇ¿ÉÒÔÌí¼ÓÎÄ±¾×Ö¶Î£¬°´Å¥¼°ÆäËû×é¼þ¡£
+        /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ HTML ï¿½ï¿½ div ï¿½ï¿½Ç©
+         * ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å²¢ï¿½ï¿½ JFrame ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ö¶Î£ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          */
         JPanel panel = new JPanel();    
-        // Ìí¼ÓÃæ°å
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         frame.add(panel);
         /* 
-         * µ÷ÓÃÓÃ»§¶¨ÒåµÄ·½·¨²¢Ìí¼Ó×é¼þµ½Ãæ°å
+         * ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          */
         placeComponents(panel);
 
-        // ÉèÖÃ½çÃæ¿É¼û
+        // ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½É¼ï¿½
         frame.setVisible(true);
+       
     }
 
     private static void placeComponents(JPanel panel) {
 
-        /* ²¼¾Ö²¿·ÖÎÒÃÇÕâ±ß²»¶à×ö½éÉÜ
-         * Õâ±ßÉèÖÃ²¼¾ÖÎª null
+        /* ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Îª null
          */
         panel.setLayout(null);
 
-        // ´´½¨ JLabel
+        // ï¿½ï¿½ï¿½ï¿½ JLabel
         JLabel userLabel = new JLabel("Year:");
-        /* Õâ¸ö·½·¨¶¨ÒåÁË×é¼þµÄÎ»ÖÃ¡£
+        /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã¡ï¿½
          * setBounds(x, y, width, height)
-         * x ºÍ y Ö¸¶¨×óÉÏ½ÇµÄÐÂÎ»ÖÃ£¬ÓÉ width ºÍ height Ö¸¶¨ÐÂµÄ´óÐ¡¡£
+         * x ï¿½ï¿½ y Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Çµï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½ width ï¿½ï¿½ height Ö¸ï¿½ï¿½ï¿½ÂµÄ´ï¿½Ð¡ï¿½ï¿½
          */
         userLabel.setBounds(10,20,80,25);
         panel.add(userLabel);
 
         /* 
-         * ´´½¨ÎÄ±¾ÓòÓÃÓÚÓÃ»§ÊäÈë
+         * ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
          */
         JTextField userText = new JTextField(20);
         userText.setBounds(100,20,165,25);
         panel.add(userText);
 
-        // ÊäÈëÃÜÂëµÄÎÄ±¾Óò
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
         JLabel passwordLabel = new JLabel("Month:");
         passwordLabel.setBounds(10,50,80,25);
         panel.add(passwordLabel);
 
         /* 
-         *Õâ¸öÀàËÆÓÃÓÚÊäÈëµÄÎÄ±¾Óò
-         * µ«ÊÇÊäÈëµÄÐÅÏ¢»áÒÔµãºÅ´úÌæ£¬ÓÃÓÚ°üº¬ÃÜÂëµÄ°²È«ÐÔ
+         *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ôµï¿½Å´ï¿½ï¿½æ£¬ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½È«ï¿½ï¿½
          */
         JTextField passwordText = new JTextField(20);
         passwordText.setBounds(100,50,165,25);
@@ -80,22 +83,22 @@ public class Input {
         panel.add(dayLabel);
 
         /* 
-         *Õâ¸öÀàËÆÓÃÓÚÊäÈëµÄÎÄ±¾Óò
-         * µ«ÊÇÊäÈëµÄÐÅÏ¢»áÒÔµãºÅ´úÌæ£¬ÓÃÓÚ°üº¬ÃÜÂëµÄ°²È«ÐÔ
+         *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ôµï¿½Å´ï¿½ï¿½æ£¬ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½È«ï¿½ï¿½
          */
         JTextField dayText = new JTextField(20);
         dayText.setBounds(100,80,165,25);
         panel.add(dayText);
         
-        // ´´½¨µÇÂ¼°´Å¥
-        JButton loginButton = new JButton("input");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Å¥
+        JButton loginButton = new JButton("judge");
         loginButton.setBounds(30, 120, 80, 25);
         panel.add(loginButton);
 //        loginButton.addActionListener(new ActionListener() {
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
-//                // ½øÐÐÂß¼­´¦Àí¼´¿É
-//                System.out.println("´¥·¢ÁËÊÂ¼þ");
+//                // ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½");
 //            }
 //        });
         loginButton.addActionListener(new ActionListener() {
@@ -104,9 +107,14 @@ public class Input {
 				month=Integer.parseInt(passwordText.getText());
 				day=Integer.parseInt(dayText.getText());
 				
-			
-				System.out.println(year);
+				DateCount dateCount = new DateCount();
 				
+				String msg = "å¤©æ•°ï¼š"+dateCount.calculate(year, month, day)+" æ˜ŸæœŸ: "+dateCount.judge(year, month, day);
+				if(dateCount.judge(year, month, day).equals("invalid")) {
+					JOptionPane.showMessageDialog(null, "invalid date");
+				}else {
+				JOptionPane.showMessageDialog(null, msg);
+				}
 			}
         });
     }
