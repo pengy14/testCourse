@@ -15,28 +15,38 @@ public class Input {
 	static int month;
 	static int day;
 	
+	public Input() {
+		JFrame frame = new JFrame("dateCount");
+        frame.setSize(700, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel panel = new JPanel();    
+        frame.add(panel);
+        placeComponents(panel);
+        frame.setVisible(true);
+	}
+	
     
     public static void main(String[] args) {    
         // ���� JFrame ʵ��
-        JFrame frame = new JFrame("dateCount");
-        // Setting the width and height of frame
-        frame.setSize(700, 400);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        /* ������壬��������� HTML �� div ��ǩ
-         * ���ǿ��Դ��������岢�� JFrame ��ָ��λ��
-         * ��������ǿ�������ı��ֶΣ���ť�����������
-         */
-        JPanel panel = new JPanel();    
-        // ������
-        frame.add(panel);
-        /* 
-         * �����û�����ķ����������������
-         */
-        placeComponents(panel);
-
-        // ���ý���ɼ�
-        frame.setVisible(true);
+//        JFrame frame = new JFrame("dateCount");
+//        // Setting the width and height of frame
+//        frame.setSize(700, 400);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//
+//        /* ������壬��������� HTML �� div ��ǩ
+//         * ���ǿ��Դ��������岢�� JFrame ��ָ��λ��
+//         * ��������ǿ�������ı��ֶΣ���ť�����������
+//         */
+//        JPanel panel = new JPanel();    
+//        // ������
+//        frame.add(panel);
+//        /* 
+//         * �����û�����ķ����������������
+//         */
+//        placeComponents(panel);
+//
+//        // ���ý���ɼ�
+//        frame.setVisible(true);
        
     }
 
