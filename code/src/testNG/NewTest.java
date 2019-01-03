@@ -7,10 +7,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-
+import org.fest.*;
+import org.fest.swing.fixture.FrameFixture;
 public class NewTest {
 	DateCount dateCount;
-	
+	private FrameFixture frame;
 	
 	@Test(dataProvider="leapYearProvider",dataProviderClass=DateProviderClass.class)
 	public void testIsLeapYear(int year,boolean expectResult) {
@@ -28,14 +29,25 @@ public class NewTest {
 		Assert.assertEquals(dateCount.calculate(year, month, day), expected);
 	}
 
+	@Test
+	public void testInput() {
+		frame.textBox("year").enterText("2019");
+		frame.textBox("month").enterText("1");
+		frame.textBox("day").enterText("3");
+		frame.button("judge").click();
+	}
+	
+	
   @BeforeClass
   public void beforeClass() {
 		 dateCount=new DateCount();
+		 frame = new FrameFixture(new Input());
+		 frame.show();
   }
 
   @AfterClass
   public void afterClass() {
-	  
+	  frame.cleanUp();
   }
 
 }
