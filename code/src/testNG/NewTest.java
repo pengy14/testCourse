@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeClass;
 
 import static org.junit.Assert.assertEquals;
 
+import java.text.ParseException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.fest.*;
@@ -28,6 +30,11 @@ public class NewTest {
 	public void testCalculate(int year,int month,int day,int expected) {
 		Assert.assertEquals(dateCount.calculate(year, month, day), expected);
 	}
+	
+	@Test(dataProvider="daysBetweenProvider",dataProviderClass=DateProviderClass.class)
+	public void testDaysBetween(int year,int month,int day,int expected) throws ParseException {
+		Assert.assertEquals(dateCount.calculateTotalDays(year, month, day), expected);
+	}
 
 	@Test
 	public void testInput() {
@@ -35,6 +42,7 @@ public class NewTest {
 		frame.textBox("month").enterText("1");
 		frame.textBox("day").enterText("3");
 		frame.button("judge").click();
+		
 	}
 	
 	

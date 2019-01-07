@@ -22,4 +22,12 @@ public class DateProviderClass {
 		Object [][] objArray = {{1800, 12, 11,-1},{1991, 12, 31,365}};
 		return objArray;
 	 }
+	 
+	 @DataProvider(name = "daysBetweenProvider")
+	 public static Object[][] daysBetween() {
+		int[] test= {2000,2004,1999,100};
+		Object [][] objArray = {{2019, 1, 7,0},{2019, 1, 13,5},{2019,1,3,4},{2018,10,22,77}};
+		return objArray;
+	 }
+	 
 }

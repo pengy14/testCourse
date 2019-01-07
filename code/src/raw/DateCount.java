@@ -1,5 +1,9 @@
 package raw;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 public class DateCount {
@@ -91,6 +95,18 @@ public class DateCount {
 		date[2] = Integer.parseInt(tempResult[2]);
 		System.out.println(validDate.calculate(date[0], date[1], date[2]));
 		System.out.println(validDate.judge(date[0], date[1], date[2]));
+	}
+	
+	public int calculateTotalDays(int i, int j, int k) throws ParseException
+	{
+		int result =0 ;
+		Calendar c = Calendar.getInstance();
+		Date today=c.getTime();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		String date=i+"-"+j+"-"+k;
+		Date dateformat = format.parse(date);
+		result = (int) ((today.getTime() - dateformat.getTime()) / (1000*3600*24));
+		return Math.abs(result) ;
 	}
 
 	public static boolean stub_dateIsValid(int year, int month, int day) {

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-03T05:04:25Z" name="Suite" finished-at="2019-01-03T05:04:27Z" duration-ms="2267">
+  <suite name="Suite" duration-ms="4060" started-at="2019-01-07T07:48:55Z" finished-at="2019-01-07T07:48:59Z">
     <groups>
     </groups>
-    <test started-at="2019-01-03T05:04:25Z" name="Test" finished-at="2019-01-03T05:04:27Z" duration-ms="2267">
+    <test name="Test" duration-ms="4060" started-at="2019-01-07T07:48:55Z" finished-at="2019-01-07T07:48:59Z">
       <class name="testNG.NewTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:25Z" name="beforeClass" finished-at="2019-01-03T05:04:26Z" duration-ms="870" status="PASS">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testNG.NewTest@1d057a39]" name="beforeClass" is-config="true" duration-ms="2507" started-at="2019-01-07T07:48:55Z" finished-at="2019-01-07T07:48:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testCalculate(int, int, int, int)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testCalculate" data-provider="calculateProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="8" status="PASS">
+        <test-method status="PASS" signature="testCalculate(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testCalculate" duration-ms="13" started-at="2019-01-07T07:48:58Z" data-provider="calculateProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculate -->
-        <test-method signature="testCalculate(int, int, int, int)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testCalculate" data-provider="calculateProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="testCalculate(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testCalculate" duration-ms="3" started-at="2019-01-07T07:48:58Z" data-provider="calculateProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCalculate -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="3" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="1" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="3" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -219,7 +219,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testDateIsValid" data-provider="dateValidProvider" finished-at="2019-01-03T05:04:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="testDateIsValid(int, int, int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDateIsValid" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="dateValidProvider" finished-at="2019-01-07T07:48:58Z">
           <params>
             <param index="0">
               <value>
@@ -245,11 +245,115 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateIsValid -->
-        <test-method signature="testInput()[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:26Z" name="testInput" finished-at="2019-01-03T05:04:27Z" duration-ms="1317" status="PASS">
+        <test-method status="PASS" signature="testDaysBetween(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDaysBetween" duration-ms="26" started-at="2019-01-07T07:48:58Z" data-provider="daysBetweenProvider" finished-at="2019-01-07T07:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaysBetween -->
+        <test-method status="PASS" signature="testDaysBetween(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDaysBetween" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="daysBetweenProvider" finished-at="2019-01-07T07:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaysBetween -->
+        <test-method status="PASS" signature="testDaysBetween(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDaysBetween" duration-ms="1" started-at="2019-01-07T07:48:58Z" data-provider="daysBetweenProvider" finished-at="2019-01-07T07:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaysBetween -->
+        <test-method status="PASS" signature="testDaysBetween(int, int, int, int)[pri:0, instance:testNG.NewTest@1d057a39]" name="testDaysBetween" duration-ms="2" started-at="2019-01-07T07:48:58Z" data-provider="daysBetweenProvider" finished-at="2019-01-07T07:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2018]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[77]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDaysBetween -->
+        <test-method status="PASS" signature="testInput()[pri:0, instance:testNG.NewTest@1d057a39]" name="testInput" duration-ms="1372" started-at="2019-01-07T07:48:58Z" finished-at="2019-01-07T07:48:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInput -->
-        <test-method signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:27Z" name="testIsLeapYear" data-provider="leapYearProvider" finished-at="2019-01-03T05:04:27Z" duration-ms="3" status="PASS">
+        <test-method status="PASS" signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testIsLeapYear" duration-ms="3" started-at="2019-01-07T07:48:59Z" data-provider="leapYearProvider" finished-at="2019-01-07T07:48:59Z">
           <params>
             <param index="0">
               <value>
@@ -265,7 +369,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsLeapYear -->
-        <test-method signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:27Z" name="testIsLeapYear" data-provider="leapYearProvider" finished-at="2019-01-03T05:04:27Z" duration-ms="3" status="PASS">
+        <test-method status="PASS" signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testIsLeapYear" duration-ms="2" started-at="2019-01-07T07:48:59Z" data-provider="leapYearProvider" finished-at="2019-01-07T07:48:59Z">
           <params>
             <param index="0">
               <value>
@@ -281,7 +385,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsLeapYear -->
-        <test-method signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:27Z" name="testIsLeapYear" data-provider="leapYearProvider" finished-at="2019-01-03T05:04:27Z" duration-ms="3" status="PASS">
+        <test-method status="PASS" signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testIsLeapYear" duration-ms="2" started-at="2019-01-07T07:48:59Z" data-provider="leapYearProvider" finished-at="2019-01-07T07:48:59Z">
           <params>
             <param index="0">
               <value>
@@ -297,7 +401,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsLeapYear -->
-        <test-method signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:27Z" name="testIsLeapYear" data-provider="leapYearProvider" finished-at="2019-01-03T05:04:27Z" duration-ms="3" status="PASS">
+        <test-method status="PASS" signature="testIsLeapYear(int, boolean)[pri:0, instance:testNG.NewTest@1d057a39]" name="testIsLeapYear" duration-ms="1" started-at="2019-01-07T07:48:59Z" data-provider="leapYearProvider" finished-at="2019-01-07T07:48:59Z">
           <params>
             <param index="0">
               <value>
@@ -313,7 +417,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsLeapYear -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.NewTest@6db9f5a4]" started-at="2019-01-03T05:04:27Z" name="afterClass" finished-at="2019-01-03T05:04:27Z" duration-ms="13" status="PASS">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testNG.NewTest@1d057a39]" name="afterClass" is-config="true" duration-ms="25" started-at="2019-01-07T07:48:59Z" finished-at="2019-01-07T07:48:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

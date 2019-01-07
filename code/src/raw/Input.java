@@ -2,6 +2,7 @@ package raw;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -47,7 +48,7 @@ public class Input extends JFrame{
 //
 //        // 锟斤拷锟矫斤拷锟斤拷杉锟�
 //        frame.setVisible(true);
-//    	new Input();
+    	new Input();
        
     }
 
@@ -95,10 +96,7 @@ public class Input extends JFrame{
         dayLabel.setBounds(10,80,80,25);
         panel.add(dayLabel);
 
-        /* 
-         *锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟侥憋拷锟斤拷
-         * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟较拷锟斤拷缘锟脚达拷锟芥，锟斤拷锟节帮拷锟斤拷锟斤拷锟斤拷陌锟饺拷锟�
-         */
+
         JTextField dayText = new JTextField(20);
         dayText.setBounds(100,80,165,25);
         dayText.setName("day");
@@ -109,13 +107,7 @@ public class Input extends JFrame{
         loginButton.setBounds(30, 120, 80, 25);
         loginButton.setName("judge");
         panel.add(loginButton);
-//        loginButton.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                // 锟斤拷锟斤拷锟竭硷拷锟斤拷锟斤拷锟斤拷
-//                System.out.println("锟斤拷锟斤拷锟斤拷锟铰硷拷");
-//            }
-//        });
+
         loginButton.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
 				year=Integer.parseInt(userText.getText());
@@ -124,12 +116,20 @@ public class Input extends JFrame{
 				
 				DateCount dateCount = new DateCount();
 				
-				String msg = "澶╂暟锛�"+dateCount.calculate(year, month, day)+" 鏄熸湡: "+dateCount.judge(year, month, day);
-				if(dateCount.judge(year, month, day).equals("invalid")) {
-					JOptionPane.showMessageDialog(null, "invalid date");
-				}else {
-				JOptionPane.showMessageDialog(null, msg);
+				String msg;
+				try {
+					msg = "Days: "+dateCount.calculate(year, month, day)+" Week: "+dateCount.judge(year, month, day)+" Daysbetween:"+dateCount.calculateTotalDays(year,month,day);
+
+					if(dateCount.judge(year, month, day).equals("invalid")) {
+						JOptionPane.showMessageDialog(null, "invalid date");
+					}else {
+					JOptionPane.showMessageDialog(null, msg);
+					}
+				} catch (ParseException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
+//				String msg = "Days: "+dateCount.calculate(year, month, day)+" Week: "+dateCount.judge(year, month, day)+" Daysbetween:"+dateCount.calculateTotalDays(year,month,day);
 			}
         });
     }
